@@ -1,0 +1,27 @@
+cff-version: 1.2.0
+message: "If you use or study the Método Ágil C.H., please cite this repository and the historical White Paper v0.1."
+title: "Método Ágil C.H.: engenharia de software humano-IA orientada por decisão, delegação limitada e evidência"
+type: generic
+authors:
+  - family-names: "Brito"
+    given-names: "Hallan de Sousa"
+version: "0.1"
+date-released: "2026-08-27"
+license: "CC-BY-4.0"
+repository-code: "https://github.com/hallanbrito/metodo-ch"
+url: "https://github.com/hallanbrito/metodo-ch"
+abstract: >-
+  Proposta experimental para organizar desenvolvimento de software por equipes
+  híbridas formadas por pessoas e agentes de inteligência artificial. O método
+  utiliza Fatias W verificáveis e o ciclo CHAVE: Contextualizar, Harmonizar,
+  Agir, Verificar e Evoluir. Concepção e responsabilidade humana por Hallan de
+  Sousa Brito, com colaboração conceitual e redação assistida por ChatGPT
+  (OpenAI).
+keywords:
+  - human-AI collaboration
+  - agentic software engineering
+  - software engineering
+  - agile methods
+  - AI agents
+  - evidence
+  - governance
