@@ -16,14 +16,16 @@ O método nasceu em 2026 durante a construção incremental do **Maestro Router*
 ## Comece por aqui
 
 - [Manifesto C.H. 0.1](MANIFESTO.md) — versão histórica original;
+- [White Paper Experimental v0.1](whitepaper/WHITE-PAPER-v0.1.md) — publicação integral navegável;
 - [Origem](docs/00-ORIGEM.md) — como e por que o método nasceu;
 - [Fundamentos](docs/01-FUNDAMENTOS.md) — valores e doze princípios;
 - [Ciclo CHAVE](docs/02-CICLO-CHAVE.md) — Contextualizar, Harmonizar, Agir, Verificar e Evoluir;
 - [Fatias W](docs/03-FATIAS-W.md) — unidade verificável de trabalho;
 - [Papéis e autonomia](docs/04-PAPEIS-E-AUTONOMIA.md) — responsabilidades e níveis CH-0 a CH-3;
 - [Evidências e gates](docs/05-EVIDENCIAS-E-GATES.md) — critérios de verificação e aceite;
-- [White Paper](whitepaper/README.md) — registro da versão experimental 0.1;
-- [Changelog](CHANGELOG.md) — evolução pública do método.
+- [Evolução do método](docs/06-EVOLUCAO-DO-METODO.md) — da v0.1 às hipóteses atuais;
+- [Template de Fatia W](templates/FATIA-W.md) e [Pacote de Evidências](templates/PACOTE-DE-EVIDENCIAS.md);
+- [Governança](GOVERNANCE.md), [contribuição](CONTRIBUTING.md) e [changelog](CHANGELOG.md).
 
 ## O fluxo em uma linha
 
@@ -46,10 +48,20 @@ A história não será reescrita retroativamente: versões históricas permanece
 
 A atribuição registra a origem da colaboração. ChatGPT é um sistema de IA; a responsabilidade humana pela publicação, decisões e consequências permanece com Hallan de Sousa Brito.
 
+Para trabalhos acadêmicos ou técnicos, o repositório inclui [CITATION.cff](CITATION.cff).
+
 ## Licença
 
-A licença pública ainda não foi definida. Até essa decisão ser registrada, este repositório não declara uma licença de reutilização.
+A documentação do Método C.H. é disponibilizada sob **Creative Commons Attribution 4.0 International (CC BY 4.0)**.
 
-## Próxima evolução
+Isso permite compartilhar e adaptar o material, inclusive comercialmente, desde que a atribuição apropriada seja preservada. Consulte [LICENSE](LICENSE).
 
-A próxima etapa é publicar o White Paper 0.1 integral e documentar, sem alterar a versão histórica, as evoluções operacionais do Método C.H. observadas durante o desenvolvimento do Maestro Router.
+Código-fonte que venha a ser adicionado no futuro deverá declarar sua própria licença de software.
+
+## Evolução atual
+
+A versão **0.1 permanece congelada como registro histórico**. As práticas desenvolvidas posteriormente são documentadas separadamente.
+
+Em setembro de 2026 surgiu a hipótese operacional do **C.H. Econômico**, motivada pelo custo crescente de contexto, raciocínio e revisões redundantes em fluxos multiagentes. Ela está em experimentação e **ainda não constitui uma nova versão publicada do método**.
+
+Veja [Evolução do Método C.H.](docs/06-EVOLUCAO-DO-METODO.md).
