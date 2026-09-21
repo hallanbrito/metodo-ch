@@ -2,7 +2,13 @@
 
 O **White Paper Experimental — Método Ágil C.H. v0.1** foi consolidado em 27 de agosto de 2026 a partir da experiência de construção do Maestro Router.
 
-O documento original possui 14 páginas e apresenta:
+## Publicação
+
+📖 **[Ler o White Paper v0.1 integral em Markdown](WHITE-PAPER-v0.1.md)**
+
+A versão Markdown preserva a redação conceitual do documento histórico e facilita leitura, busca, versionamento e estudo diretamente no GitHub. Paginação e elementos visuais do documento original são tratados como apresentação, não como conteúdo normativo.
+
+O documento apresenta:
 
 - contexto e motivação;
 - origem e posicionamento;
@@ -23,6 +29,6 @@ O documento original possui 14 páginas e apresenta:
 
 ## Preservação histórica
 
-O arquivo original será publicado aqui em uma etapa própria, preservando a versão 0.1 como registro histórico. Alterações futuras não devem reescrever retroativamente o documento original.
+A versão 0.1 é um **registro histórico**. Evoluções posteriores do Método C.H. devem ser documentadas em novas versões, sem reescrever retroativamente esta publicação.
 
 A versão curta e canônica do manifesto está em [../MANIFESTO.md](../MANIFESTO.md).
