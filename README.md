@@ -24,6 +24,7 @@ O método nasceu em 2026 durante a construção incremental do **Maestro Router*
 - [Papéis e autonomia](docs/04-PAPEIS-E-AUTONOMIA.md) — responsabilidades e níveis CH-0 a CH-3;
 - [Evidências e gates](docs/05-EVIDENCIAS-E-GATES.md) — critérios de verificação e aceite;
 - [Evolução do método](docs/06-EVOLUCAO-DO-METODO.md) — da v0.1 às hipóteses atuais;
+- [Marco público v0.1 — CHAVE](docs/07-MARCO-PUBLICO-v0.1.md) — fechamento da fundação pública usando o próprio ciclo do método;
 - [Template de Fatia W](templates/FATIA-W.md) e [Pacote de Evidências](templates/PACOTE-DE-EVIDENCIAS.md);
 - [Governança](GOVERNANCE.md), [contribuição](CONTRIBUTING.md) e [changelog](CHANGELOG.md).
 
