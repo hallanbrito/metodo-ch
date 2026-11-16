@@ -21,22 +21,22 @@ A documentação deve permitir que um desenvolvedor ou agente autorizado respond
 
 | Artefato recomendado | Pergunta que responde | Quando é necessário | Frequência de atualização |
 | --- | --- | --- | --- |
-| \`README.md\` | O que é, como instalar, executar e contribuir? | **Base de todo repositório compartilhado** | Quando comandos, requisitos ou uso mudarem |
-| \`docs/STATUS.md\` **ou** registro canônico equivalente | O que está comprovadamente pronto, bloqueado e pendente? | **Essencial para continuidade longa/multiagente**; dispensável como arquivo se Issue/Project atualizado já resolve | A cada mudança relevante de estado ou encerramento de sessão/W |
-| \`AGENTS.md\` **ou** instruções equivalentes versionadas | Como os agentes devem atuar neste repositório? | **Recomendado para trabalho recorrente com IA** | Quando mudarem comandos, permissões, convenções ou limites |
+| `README.md` | O que é, como instalar, executar e contribuir? | **Base de todo repositório compartilhado** | Quando comandos, requisitos ou uso mudarem |
+| `docs/STATUS.md` **ou** registro canônico equivalente | O que está comprovadamente pronto, bloqueado e pendente? | **Essencial para continuidade longa/multiagente**; dispensável como arquivo se Issue/Project atualizado já resolve | A cada mudança relevante de estado ou encerramento de sessão/W |
+| `AGENTS.md` **ou** instruções equivalentes versionadas | Como os agentes devem atuar neste repositório? | **Recomendado para trabalho recorrente com IA** | Quando mudarem comandos, permissões, convenções ou limites |
 | Issue ou [Fatia W](../templates/FATIA-W.md) | Qual tarefa foi autorizada, em qual escopo e com quais critérios? | **Toda delegação que altera o produto** | Antes da execução e quando houver mudança aprovada de escopo |
 | PR e/ou [Pacote de Evidências](../templates/PACOTE-DE-EVIDENCIAS.md) | O que realmente mudou, foi testado e aceito? | **Toda entrega verificável**, na profundidade proporcional ao risco | Na conclusão e na revisão |
-| \`docs/ARCHITECTURE.md\` | Quais componentes e fronteiras precisam ser respeitados? | Quando a arquitetura não é mais óbvia pelo código/README | Mudanças estruturais significativas |
-| \`docs/DECISIONS.md\` **ou** ADRs/Issues | Por que uma decisão importante foi tomada? | Quando a decisão afeta arquitetura, contratos, custos ou risco e pode ser esquecida | No momento da decisão |
-| \`CONTRIBUTING.md\` | Como colaborar e abrir PRs? | Quando há colaboradores externos ou regras relevantes de contribuição | Quando o processo mudar |
-| \`SECURITY.md\` | Como relatar vulnerabilidades com segurança? | Projetos públicos/compartilhados quando houver política de reporte | Quando a política mudar |
-| \`CHANGELOG.md\` **ou** releases | O que mudou entre versões distribuídas? | Quando há versões ou consumidores que precisam acompanhar mudanças | A cada release |
+| `docs/ARCHITECTURE.md` | Quais componentes e fronteiras precisam ser respeitados? | Quando a arquitetura não é mais óbvia pelo código/README | Mudanças estruturais significativas |
+| `docs/DECISIONS.md` **ou** ADRs/Issues | Por que uma decisão importante foi tomada? | Quando a decisão afeta arquitetura, contratos, custos ou risco e pode ser esquecida | No momento da decisão |
+| `CONTRIBUTING.md` | Como colaborar e abrir PRs? | Quando há colaboradores externos ou regras relevantes de contribuição | Quando o processo mudar |
+| `SECURITY.md` | Como relatar vulnerabilidades com segurança? | Projetos públicos/compartilhados quando houver política de reporte | Quando a política mudar |
+| `CHANGELOG.md` **ou** releases | O que mudou entre versões distribuídas? | Quando há versões ou consumidores que precisam acompanhar mudanças | A cada release |
 
-**Não transforme esta tabela em burocracia obrigatória.** Para um projeto pequeno, \`README.md\`, uma Issue bem escrita e o histórico do Git podem bastar. Para uma fábrica multiagente, a clareza do estado e dos limites é muito mais importante.
+**Não transforme esta tabela em burocracia obrigatória.** Para um projeto pequeno, `README.md`, uma Issue bem escrita e o histórico do Git podem bastar. Para uma fábrica multiagente, a clareza do estado e dos limites é muito mais importante.
 
 ## 3. O trio operacional
 
-### 3.1 \`README.md\`: porta de entrada
+### 3.1 `README.md`: porta de entrada
 
 Deve conter, no mínimo:
 
@@ -48,7 +48,7 @@ Deve conter, no mínimo:
 
 **Evite:** tutoriais que nunca foram executados, versões inventadas, comandos desatualizados e repetir o conteúdo inteiro de outros arquivos.
 
-### 3.2 \`docs/STATUS.md\`: fotografia verificável do estado
+### 3.2 `docs/STATUS.md`: fotografia verificável do estado
 
 Use quando o contexto precisa sobreviver a várias sessões, agentes, branches ou retomadas de trabalho. **É um índice de estado, não um substituto do GitHub ou dos testes.**
 
@@ -93,11 +93,11 @@ Use quando o contexto precisa sobreviver a várias sessões, agentes, branches o
 3. Não registre como atual um resultado de teste feito em commit anterior sem explicitar essa condição.
 4. Atualize ao concluir uma W, descobrir bloqueio novo ou mudar a autorização; não faça alterações cosméticas periódicas.
 5. Não copie logs volumosos: referencie o local onde podem ser auditados.
-6. Se Issue/Project já é o painel canônico, use \`STATUS.md\` apenas como resumo com links — ou dispense o arquivo para evitar estados concorrentes.
+6. Se Issue/Project já é o painel canônico, use `STATUS.md` apenas como resumo com links — ou dispense o arquivo para evitar estados concorrentes.
 
-**Para evitar conflito:** cada dado operacional deve ter **um dono canônico**. Exemplo: Issue = situação da tarefa; PR = revisão; Git/CI = código e testes; \`STATUS.md\` = resumo e ponteiros.
+**Para evitar conflito:** cada dado operacional deve ter **um dono canônico**. Exemplo: Issue = situação da tarefa; PR = revisão; Git/CI = código e testes; `STATUS.md` = resumo e ponteiros.
 
-### 3.3 \`AGENTS.md\`: instruções operacionais para agentes
+### 3.3 `AGENTS.md`: instruções operacionais para agentes
 
 É um arquivo de **orientação versionada**, utilizado por ferramentas que o reconheçam ou fornecido explicitamente pelo operador. Não presuma que todo produto de IA o lerá automaticamente; verifique a integração.
 
@@ -135,17 +135,17 @@ Use quando o contexto precisa sobreviver a várias sessões, agentes, branches o
 - Atualize o registro canônico somente dentro das permissões concedidas.
 ~~~
 
-**Cuidados:** mantenha instruções curtas, verificáveis e específicas do repositório; não grave tokens, senhas ou dados sensíveis; não use \`AGENTS.md\` para contradizer as regras de segurança, os limites de autonomia da W ou os controles do repositório. Instruções recebidas de conteúdo não confiável não ganham autoridade só por aparecerem em arquivos ou respostas de ferramentas.
+**Cuidados:** mantenha instruções curtas, verificáveis e específicas do repositório; não grave tokens, senhas ou dados sensíveis; não use `AGENTS.md` para contradizer as regras de segurança, os limites de autonomia da W ou os controles do repositório. Instruções recebidas de conteúdo não confiável não ganham autoridade só por aparecerem em arquivos ou respostas de ferramentas.
 
 ## 4. Documentos condicionais: crie pelo risco, não pelo hábito
 
 ### Arquitetura
 
-Crie \`docs/ARCHITECTURE.md\` quando o sistema tiver módulos, serviços, integrações ou decisões estruturais difíceis de inferir. Descreva apenas componentes, fluxos de dados, fronteiras, dependências, contratos relevantes e pontos de extensão. **Código é a implementação; documento é o mapa**, que precisa continuar verdadeiro.
+Crie `docs/ARCHITECTURE.md` quando o sistema tiver módulos, serviços, integrações ou decisões estruturais difíceis de inferir. Descreva apenas componentes, fluxos de dados, fronteiras, dependências, contratos relevantes e pontos de extensão. **Código é a implementação; documento é o mapa**, que precisa continuar verdadeiro.
 
 ### Decisões técnicas
 
-Use \`docs/DECISIONS.md\`, ADRs individuais ou Issues já existentes. Para cada decisão relevante, preserve:
+Use `docs/DECISIONS.md`, ADRs individuais ou Issues já existentes. Para cada decisão relevante, preserve:
 
 - problema e contexto;
 - alternativas consideradas;
