@@ -126,3 +126,103 @@ In Maestro Router, Hallan serves as Human Owner; ChatGPT primarily acts as Cogni
 | **Acceptance Record** | Approval, rejection, or correction request from the accountable human. |
 | **Versioned Memory** | Agent instructions, documentation, maps, standards, and technical history in the source of truth. |
 
+## 8. The Work Unit: W Slice
+
+A W Slice, or Work Slice, is the smallest change capable of producing verifiable learning or value without compromising product coherence. It may be documentary, architectural, functional, corrective, or experimental. Its size is determined by review capacity, not an agent's maximum capabilities.
+
+A W Slice ready for execution must record:
+
+- identifier, objective, and expected value;
+- baseline of the source of truth;
+- included and explicitly excluded scope;
+- decisions already approved and decisions still prohibited;
+- authorized files, components, tools, and access;
+- acceptance criteria and required verifications;
+- autonomy level and accountable human;
+- rollback or recovery strategy;
+- Evidence Package format.
+
+> **W Slice golden rule.** If a delivery cannot be reviewed with sufficient understanding, the slice is still too large.
+
+## 9. The CHAVE Cycle
+
+Every W Slice goes through five movements. Trivial changes can move through them quickly, while critical ones may require formal documentation.
+
+| Step | Expected outcome |
+|---|---|
+| **C — Contextualize** | Read the source of truth and understand the need, risk, history, and current capabilities. No previous conversation replaces the published baseline. |
+| **H — Harmonize** | Align intent, architecture, constraints, and criteria. Record the necessary decision and close the Execution Contract. |
+| **A — Act** | Delegate to a suitable agent in a branch, worktree, or isolated environment with limited autonomy and time. |
+| **V — Verify** | Examine evidence, diffs, tests, security, scope adherence, and documentation impact. Correct or reject as necessary. |
+| **E — Evolve** | Obtain human acceptance, integrate, clean temporary resources, and return lessons to versioned memory. |
+
+## 10. Autonomy Levels
+
+Autonomy should not be a permanent property of an agent. It is granted per W Slice and calibrated to risk.
+
+| Level | Name | Permission |
+|---|---|---|
+| **CH-0** | Consult | Read, analyze, and explain only. No external changes. |
+| **CH-1** | Propose | May prepare a plan, decision, prompt, or suggested diff but cannot write to the source of truth. |
+| **CH-2** | Isolated execution | May create a branch, change authorized scope, run tests, commit, and open a Draft PR. Cannot integrate. |
+| **CH-3** | Conditional integration | May integrate low-risk changes when all automated gates and predefined policies pass; must retain an audit trail. |
+
+The initial Maestro Router workflow primarily operated at CH-2: the agent implemented in its own branch and opened a Draft PR, while acceptance and merging depended on review and authorization. Destructive changes and access to secrets, production, personal data, or external contracts require specific policies and may remain restricted even at higher levels.
+
+## 11. Responsible Parallelism
+
+The ability to run several agents at once does not make it obligatory. In C.H., work-in-progress limits depend on the Evidence Guardian's capacity and coupling between W Slices.
+
+Parallelism is acceptable when:
+
+- slices start from the same known baseline;
+- they do not modify the same contracts, files, or invariants;
+- their acceptance criteria are independent;
+- there is real capacity to review and integrate every result;
+- merge order and conflict resolution were anticipated.
+
+When those conditions are absent, C.H. recommends WIP = 1 for architectural and contractual changes. The apparent speed of multiple agents may merely turn implementation time into verification debt and integration conflicts.
+
+## 12. Definition of Ready and Definition of Done
+
+| Ready to execute | Done |
+|---|---|
+| **Objective and value understood; baseline confirmed; decisions approved; scope and exclusions recorded; testable criteria; defined autonomy level; conflicts evaluated.** | Change within scope; complete Evidence Package; successful applicable tests and checks; consistent documentation; declared limitations; human acceptance; completed integration; cleaned branches/resources; recorded learning. |
+
+An agent reporting that it has finished does not change the W Slice state. Completion is a verifiable property of the product and process, not a statement by the executor.
+
+## 13. Metrics Focused on Accepted Value
+
+Lines of code, prompt counts, and number of agents measure activity. C.H. recommends measuring outcomes and supervision cost:
+
+| Metric | Interpretation |
+|---|---|
+| **Accepted W Slice throughput** | Slices integrated and accepted per period. |
+| **First-pass acceptance** | Percentage of W Slices approved without corrective cycles. |
+| **Correction loops** | Average number of reviews and reruns per W Slice. |
+| **Verification effort** | Human and computational time spent validating each W Slice. |
+| **Escaped defects** | Issues found after integration or delivery. |
+| **Scope drift** | Unauthorized changes detected in diffs. |
+| **Integration conflicts** | Rework caused by concurrent W Slices or stale baselines. |
+| **Cost per accepted W Slice** | Model usage, infrastructure, and review costs divided by accepted slices. |
+| **Verification debt** | Volume of agent-generated output not yet understood or proven. |
+
+> **North-star metric.** C.H. aims to maximize accepted value per unit of risk, cost, and human attention — not raw code output.
+
+## 14. Maestro Router as the Origin Case
+
+The method emerged from practice. Maestro Router was divided into stages called W Slices. Each slice began by reading the published master branch and comparing code, tests, and documents. Policy or architecture changes were recorded before implementation. Only after the scope was approved did a closed prompt authorize an agent to work in an isolated branch.
+
+The executor produced changes, tests, dependency checks, diff consistency checks, a commit, and a Draft PR. ChatGPT reviewed contracts, architecture, and scope compliance. Hallan approved, requested corrections, or rejected. After merging, the branch was removed, the working tree returned to a clean state, and the next W Slice was selected. The workflow adopted small deliveries, explicit decisions, independent review, and versioned memory before it received the name C.H.
+
+| C.H. element | Manifestation in Maestro |
+|---|---|
+| **Human Product Owner** | Hallan sets priorities, approves decisions, and authorizes integration. |
+| **Cognitive orchestration** | ChatGPT turns intent into technical scope, prompts, and reviews. |
+| **Agentic execution** | Codex modifies the repository within agreed scope. |
+| **W Slice** | A small, useful, verifiable decision or implementation. |
+| **Evidence Package** | Tests, pip check, git diff --check, scope report, secrets, network, and Git state. |
+| **Acceptance** | Reviewed Draft PR, applied corrections, explicit approval, merge, and cleanup. |
+
+This case does not yet prove superiority. It demonstrates feasibility and provides an observable sequence from which research hypotheses may be formulated.
+
