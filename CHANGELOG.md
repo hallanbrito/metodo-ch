@@ -30,6 +30,12 @@ Todas as mudanças relevantes na documentação pública do Método C.H. serão 
 - criação de templates públicos de Fatia W e Pacote de Evidências;
 - registro do Maestro Router como estudo de caso de origem.
 
+### Guia operacional da colaboração humano–IA
+
+- publicação das dez Regras de Ouro da Programação Híbrida Humano–IA, independentes de marcas e modelos;
+- inclusão do comando PARE / KISS e de um contrato mínimo de tarefa;
+- preservação dos textos históricos, sem promoção retroativa de uma nova versão do método.
+
 ### Evolução em experimentação
 
 - documentação da linha histórica do método;
