@@ -18,6 +18,7 @@ O método nasceu em 2026 durante a construção incremental do **Maestro Router*
 - [Manifesto C.H. 0.1](MANIFESTO.md) — versão histórica original;
 - [White Paper Experimental v0.1](whitepaper/WHITE-PAPER-v0.1.md) — publicação integral navegável;
 - [Origem](docs/00-ORIGEM.md) — como e por que o método nasceu;
+- [Regras de Ouro da Programação Híbrida Humano–IA](docs/08-REGRAS-DE-OURO.md) — práticas para simplicidade, rastreabilidade, papéis substituíveis e evidência;
 - [Fundamentos](docs/01-FUNDAMENTOS.md) — valores e doze princípios;
 - [Ciclo CHAVE](docs/02-CICLO-CHAVE.md) — Contextualizar, Harmonizar, Agir, Verificar e Evoluir;
 - [Fatias W](docs/03-FATIAS-W.md) — unidade verificável de trabalho;
