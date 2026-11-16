@@ -226,3 +226,113 @@ The executor produced changes, tests, dependency checks, diff consistency checks
 
 This case does not yet prove superiority. It demonstrates feasibility and provides an observable sequence from which research hypotheses may be formulated.
 
+## 15. Relationship to Scrum, Kanban, and XP
+
+| Reference | What C.H. inherits | What it makes explicit |
+|---|---|---|
+| **Scrum** | Value, transparency, inspection, adaptation, and Product Owner accountability. | Agent autonomy, execution contracts, agent-generated evidence, and repository memory. |
+| **Kanban** | Pull-based flow, visualization, and work-in-progress limits. | WIP limited by human–AI verification capacity and integration risk. |
+| **XP** | Small deliveries, tests, integration, refactoring, simplicity, and rapid feedback. | Isolated agent execution, risk-proportional review, and management of probabilistic context. |
+| **DevOps** | Automation, CI/CD, observability, and end-to-end accountability. | Explicit autonomy levels and human acceptance for tool-operating agents. |
+
+C.H. can coexist with these methods. An organization may use Sprints and run CHAVE within each item, operate a Kanban flow, or apply XP practices during Act. C.H. does not compete over ceremonies. It governs the boundary between human intent and agentic execution.
+
+## 16. Hypotheses and Validation Plan
+
+To become more than an interesting formulation, the method must be falsifiable. We initially propose five hypotheses:
+
+1. W Slices with predefined scope and evidence increase first-pass acceptance compared with open-ended prompts.
+2. Requiring agents to consult the source of truth reduces contradictions and out-of-scope changes.
+3. Risk-calibrated autonomy reduces escaped defects without eliminating speed gains on reversible tasks.
+4. Limiting parallelism by review capacity reduces integration conflicts and verification debt.
+5. Recording lessons in the repository reduces repeated failures across agents, models, and sessions.
+
+Future validation should compare equivalent projects or periods, record baselines as well as task size and risk, and publish both positive results and failures. External teams should be able to adapt the method and report which elements add value or bureaucracy. C.H. deserves widespread adoption only if it produces measurable improvement.
+
+## 17. Limitations and Risks
+
+- The method emerged from a single project with a small human–AI team.
+- Roles can concentrate too much power in the Cognitive Orchestrator without independent review.
+- Evidence Packages can become bureaucracy if they are not proportionate to risk.
+- Tests can confirm only expected behavior and still miss requirements, security, or architecture errors.
+- Models and tools change quickly; specific practices may age faster than principles.
+- Credit, intellectual property, privacy, and legal responsibility require human and institutional policies beyond the method.
+
+These limitations do not weaken the proposal; they define the conditions under which it should be criticized and improved.
+
+## 18. C.H. Manifesto 0.1
+
+We are learning better ways to develop software with people and intelligent agents by building real products and examining the results. Through this experience, we have come to value:
+
+> **verifiable intent** *over* lengthy prompts
+>
+> **reproducible evidence** *over* confident responses
+>
+> **small, reversible slices** *over* large autonomous deliveries
+>
+> **explicit memory** *over* assumed context
+>
+> **human accountability** *over* ownerless autonomy
+>
+> **fit-for-purpose orchestration** *over* allegiance to a tool
+>
+> **Our commitment.** AI can expand our ability to build. The responsibility to decide what is worth creating, prove that it works, and answer for its consequences remains human.
+
+## 19. Conclusion
+
+Engineering methods do not become historically significant simply by receiving a name. They matter when others can understand, test, criticize, and improve them. The C.H. Method begins as an honest account of a practice developed among Hallan, ChatGPT, and coding agents while building Maestro Router.
+
+Its proposal is simple: in a world where generating software becomes easier, discipline must shift toward context, boundaries, verification, and accountability. C.H. aims to organize that discipline without suffocating creativity or wasting the speed that AI offers.
+
+Version 0.1 does not finish the method. It opens a path to experimentation. If C.H. can be applied, measured, refuted, and improved by other teams, it will have taken its first real step beyond Maestro.
+
+## Authorship and Transparency Note
+
+The C.H. Method originated in conversations and practices led by Hallan de Sousa Brito during development of Maestro Router, with ChatGPT assisting in the conceptual organization, research, and writing of this version. ChatGPT is an AI system and assumes no moral, legal, or scientific responsibility. Hallan remains responsible for human review, approval, and decisions about publication. Joint attribution in the title records the origin of the collaboration without equating AI with a human author.
+
+## References
+
+[1] Beck, K. et al. Manifesto for Agile Software Development. 2001.  
+[2] Schwaber, K.; Sutherland, J. The Scrum Guide. 2020.  
+[3] DORA. State of AI-assisted Software Development 2025. Google Cloud, 2025.  
+[4] Stack Overflow. 2025 Developer Survey: Artificial Intelligence. 2025.  
+[5] Lopopolo, R. Harness engineering: leveraging Codex in an agent-first world. OpenAI, 2026.  
+[6] Anthropic. How AI is transforming work at Anthropic. 2025.  
+[7] Zhang, S. et al. Empowering Agile-Based Generative Software Development through Human-AI Teamwork. ACM TOSEM, 2025. DOI 10.1145/3702987.  
+[8] Dhanorkar, S.; Passi, S.; Vorvoreanu, M. Human oversight of agentic systems in practice. 2026.  
+[9] OpenAI. OpenAI co-founds the Agentic AI Foundation and donates AGENTS.md. 2025.
+
+## Appendix A — Minimum W Slice Template
+
+| Field | Contents |
+|---|---|
+| **Identifier** | W__ — short title |
+| **Expected value** | What problem or learning does this slice deliver? |
+| **Baseline** | Branch, commit, and documents used as the source of truth. |
+| **Authorized scope** | Files, components, and behavior that may change. |
+| **Out of scope** | Changes explicitly prohibited in this slice. |
+| **Applicable decision** | Approved ADR, contract, policy, or hypothesis. |
+| **Autonomy** | CH-0, CH-1, CH-2, or CH-3. |
+| **Executor** | Allowed agent, model, environment, and tools. |
+| **Acceptance criteria** | Verifiable behavior and properties. |
+| **Required evidence** | Tests, diff, analysis, demonstration, security, and cost. |
+| **Accountable human** | Person who accepts, rejects, or requests correction. |
+| **Rollback** | How to undo or isolate the change if it fails. |
+| **Learning** | What should be recorded in versioned memory on completion. |
+
+## Appendix B — Minimum Evidence Package
+
+| Block | Expected evidence |
+|---|---|
+| **Identity** | W Slice, executor, model, environment, branch, and baseline. |
+| **Changes** | Diff summary and list of changed files. |
+| **Checks** | Tests, static analysis, build, functional demonstration, and results. |
+| **Scope** | Confirmation of adherence; unauthorized changes must be disclosed. |
+| **Risk and security** | Secrets, data, network, dependencies, permissions, and destructive operations. |
+| **Limitations** | Assumptions, untested cases, questions, and deferred decisions. |
+| **Economics** | Time, usage, known cost, and reason for choosing the executor. |
+| **Final state** | Commit, Draft PR, tree status, and rollback instructions. |
+
+---
+
+> **Preservation note:** this English version translates the historical Experimental White Paper v0.1 dated August 27, 2026. The Portuguese Markdown transcription remains the source of record. Visual elements and pagination from the original presentation are not normative.
