@@ -18,6 +18,14 @@ Todas as mudanças relevantes na documentação pública do Método C.H. serão 
 
 ## [Unreleased]
 
+### Acesso simples e bilíngue (proposta)
+
+- README reescrito como receita CHAVE de cinco passos;
+- navegação inicial em português e inglês;
+- traduções inglesas dos documentos, templates e white paper da `main`;
+- preservação dos registros históricos originais em português.
+
+
 ### Repositório público
 
 - criação e organização do repositório público oficial;
